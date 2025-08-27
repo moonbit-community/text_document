@@ -67,7 +67,6 @@ test "readme example" {
 ### Key Functions
 
 #### Document Creation
-- `make(params)` - Create document from parameters
 - `TextDocument::new(uri~, language_id~, version~, text~)` - Create document with labeled arguments
 
 #### Document Properties  
