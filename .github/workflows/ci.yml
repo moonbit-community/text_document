@@ -14,6 +14,7 @@ jobs:
       - run: |
           curl -fsSL https://cli.moonbitlang.com/install/unix.sh | bash
           echo "$HOME/.moon/bin" >> $GITHUB_PATH
+      - run: moon update
       - name: moon check
         run: moon check --deny-warn
       - name: test
@@ -36,6 +37,7 @@ jobs:
       - run: |
           curl -fsSL https://cli.moonbitlang.com/install/unix.sh | bash
           echo "$HOME/.moon/bin" >> $GITHUB_PATH
+      - run: moon update
       - name: test
         run: |
           moon test --enable-coverage
