@@ -1,0 +1,12 @@
+{
+  "name": "bzy-debug/text_document",
+  "version": "0.1.0",
+  "deps": {
+    "bzy-debug/string_zipper": "0.1.2"
+  },
+  "readme": "README.md",
+  "repository": "",
+  "license": "Apache-2.0",
+  "keywords": [],
+  "description": ""
+}

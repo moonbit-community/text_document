@@ -1,0 +1,50 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "bzy-debug/text_document"
+
+// Values
+
+// Errors
+
+// Types and methods
+pub struct Position {
+  line : Int
+  character : Int
+}
+fn Position::new(Int, Int) -> Self
+
+pub struct Range {
+  start : Position
+  end : Position
+}
+fn Range::new(Position, Position) -> Self
+
+pub struct TextDocument {
+  // private fields
+}
+fn TextDocument::absolute_position(Self, Position) -> Int
+fn TextDocument::absolute_range(Self, Range) -> (Int, Int)
+fn TextDocument::apply_content_changes(Self, Array[TextDocumentContentChangeEvent], version? : Int?) -> Self
+fn TextDocument::apply_text_document_edits(Self, Array[TextEdit]) -> Self
+fn TextDocument::document_uri(Self) -> String
+fn TextDocument::language_id(Self) -> String
+fn TextDocument::new(uri~ : String, language_id~ : String, version~ : Int, text~ : String) -> Self
+fn TextDocument::set_version(Self, Int) -> Self
+fn TextDocument::text(Self) -> String
+fn TextDocument::version(Self) -> Int
+
+pub struct TextDocumentContentChangeEvent {
+  range : Range?
+  text : String
+}
+fn TextDocumentContentChangeEvent::new(String, range? : Range?) -> Self
+
+pub struct TextEdit {
+  range : Range
+  new_text : String
+}
+fn TextEdit::new(Range, String) -> Self
+
+// Type aliases
+
+// Traits
+
