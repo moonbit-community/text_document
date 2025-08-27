@@ -5,8 +5,8 @@
     "bzy-debug/string_zipper": "0.1.2"
   },
   "readme": "README.md",
-  "repository": "",
+  "repository": "https://github.com/moonbit-community/text_document",
   "license": "Apache-2.0",
-  "keywords": [],
-  "description": ""
+  "keywords": ["text-document", "lsp", "language-server", "editor", "text-editing"],
+  "description": "A high-performance text document library for MoonBit that provides LSP-compatible text editing operations. This library is a port of the OCaml LSP text document implementation and is designed for production use in language servers and text editors."
 }
