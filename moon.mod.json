@@ -2,7 +2,10 @@
   "name": "bzy-debug/text_document",
   "version": "0.1.0",
   "deps": {
-    "bzy-debug/string_zipper": "0.1.2"
+    "bzy-debug/string_zipper": {
+      "path": "third_party/string_zipper",
+      "version": "0.1.2"
+    }
   },
   "readme": "README.md",
   "repository": "https://github.com/moonbit-community/text_document",
