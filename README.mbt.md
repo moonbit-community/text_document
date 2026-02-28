@@ -30,7 +30,7 @@ Then import it in your `moon.pkg.json`:
 
 ## Quick Example
 
-```moonbit nocheck
+```moonbit check
 ///|
 test "readme example" {
   // Create a text document using labeled constructor
