@@ -30,24 +30,22 @@ Then import it in your `moon.pkg.json`:
 
 ## Quick Example
 
-```moonbit
+```moonbit check
+///|
 test "readme example" {
   // Create a text document using labeled constructor
   let doc = TextDocument::new(
     uri="file:///example.txt",
-    language_id="moonbit", 
+    language_id="moonbit",
     version=1,
-    text="Hello, World!"
+    text="Hello, World!",
   )
-  
+
   // Apply a content change
-  let range = Range::new(
-    Position::new(0, 7), 
-    Position::new(0, 12)
-  )
+  let range = Range::new(Position::new(0, 7), Position::new(0, 12))
   let change = TextDocumentContentChangeEvent::new("MoonBit", range=Some(range))
   let updated_doc = doc.apply_content_changes([change])
-  
+
   inspect(updated_doc.text(), content="Hello, MoonBit!")
 }
 ```
